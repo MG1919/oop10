@@ -2,7 +2,8 @@ const inquirer = require("inquirer");
 const Manager = require("./library/Manager");
 const Intern = require("./library/Intern");
 const Engineer = require("./library/Engineer");
-
+const generateHTML = require("./utils/generateHTML");
+const fs = require("fs");
 let employeeArr = [];
 
 start();
@@ -144,4 +145,9 @@ function addIntern() {
 
 function exitApp() {
   console.log(employeeArr);
+  fs.writeFileSync("index.html", generateHTML(employeeArr), function (err) {
+    if (err) throw err;
+  });
+  console.log("File generated");
+  process.exit(0);
 }
