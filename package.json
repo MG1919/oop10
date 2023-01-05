@@ -1,0 +1,28 @@
+{
+  "name": "oop10",
+  "version": "1.0.0",
+  "description": "OOPS concept ",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MG1919/oop10.git"
+  },
+  "keywords": [
+    "Nodejs",
+    "CLI",
+    "app"
+  ],
+  "author": "michaelGiordano",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MG1919/oop10/issues"
+  },
+  "homepage": "https://github.com/MG1919/oop10#readme",
+  "dependencies": {
+    "inquirer": "^8.2.4",
+    "jest": "^29.3.1"
+  }
+}
